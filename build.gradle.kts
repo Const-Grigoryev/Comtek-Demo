@@ -1,6 +1,5 @@
 plugins {
     java
-    application
 }
 
 group = "dev.aspid812"
@@ -12,12 +11,9 @@ repositories {
 
 dependencies {
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito:mockito-core:3.+")
 }
 
 tasks.test {
     useJUnit()
-}
-
-application {
-    mainClass.set("dev.aspid812.comtek_demo.Client")
 }
